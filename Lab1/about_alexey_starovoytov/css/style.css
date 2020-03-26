@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+footer {
+  text-align: center;
+  height: auto;
+  background: #f9f9f9;
+  font: 16px/ 70px "Georgia";
+}
+
+ol,
+ul {
+  padding-top: 18px;
+}
+
+h1 {
+  text-align: left;
+  color: #333;
+  font: 700 48px/ 48px "Open Sans";
+  margin-top: 30px;
+}
+
+h3 {
+  font: 700 22px/32px "Open Sans";
+  color: #333;
+  padding-bottom: 17px;
+}
+
+h2 {
+  color: #333;
+  font: 400 36px/ 42px "Open sans";
+  padding: 40px 0 19px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 15%;
+}
+
+.rectangle {
+  width: 60px;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #0047a8;
+  margin-top: 30px;
+}
+
+p {
+  color: #555555;
+  font: 19px/ 32px "Georgia";
+}
+
+.clear {
+  clear: both;
+}
+
+.interesting_things {
+  padding-bottom: 50px;
+}
+
+body {
+  background-color: #ffff;
+  min-width: 1200px;
+}
+
+.navigator {
+  background: #fff;
+  height: 50px;
+  z-index: 170;
+  margin: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.navigator ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigator li {
+  cursor: pointer;
+  display: inline-block;
+  font: 19px/ 50px "Georgia";
+}
+
+.navigator a {
+  text-align: center;
+  color: #333333;
+  height: 50px;
+  text-decoration: none;
+  padding: 0 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: -4px;
+  font: 19px/ 50px "Georgia";
+}
+
+.navigator li:hover {
+  background-color: #0047a8;
+}
+
+.navigator a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.background {
+  width: 100%;
+}
+
+.hello_its_me {
+  width: 320px;
+  height: 432px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.stuff_in_quote {
+  width: 586px;
+  float: right;
+  color: #333;
+  background-color: #ffffff55;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+blockquote {
+  font: italic 28px/ 42px "Georgia";
+}
+
+.quote {
+  margin: -195px auto 0;
+  width: 942px;
+  position: relative;
+  pointer-events: none;
+}
+
+.text_of_qoute {
+  margin: 26px 0 0 25px;
+}
+
+.quote_author {
+  font: 600 16px/ 42px "Open Sans";
+}
+
+.some_hobbies {
+  width: 970px;
+  margin: 0 auto;
+  padding-top: 7px;
+  text-align: left;
+}
+
+.a_writers {
+  padding-bottom: 39px;
+}
+
+.list_of_hobbies {
+  float: left;
+}
+
+.list_of_hobbies span {
+  color: #0047a8;
+  font: 700 22px/ 32px "Open Sans";
+}
+
+.list_of_hobbies li {
+  color: #555555;
+  font: 19px/ 36px "Georgia";
+  margin-left: 20px;
+}
+
+.list_of_hobbies {
+  padding-top: 35px;
+  width: 370px;
+  padding-left: 11px;
+}
+
+.about_me_info {
+  width: 560px;
+  text-align: left;
+  margin-top: -164px;
+  float: left;
+  margin-left: 20px;
+}
+
+.about_me {
+  padding-top: 80px;
+}
+
+.type_me_button {
+  margin-top: 43px;
+}
+
+.button_type_me {
+  color: #0047a8;
+  font: 400 19px/ 32px "Georgia";
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button_type_me span {
+  text-decoration: underline;
+}
+
+.button_type_me:hover {
+  color: #0047a8;
+}
+
+.second_part {
+  width: 100%;
+  margin: auto;
+}
+
+.favourite_films {
+  width: 1200px;
+  padding: 19px 0 57px;
+}
+
+.image_of_film {
+  width: 100%;
+  height: 149.63px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+}
+
+.film_block.first {
+  margin: 0;
+  padding: 0;
+}
+
+.film_block {
+  width: 285px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.second_part p {
+  font: 16px/ 28px "Georgia";
+  color: #555555;
+}
+
+.all_films {
+  width: 220px;
+  border-radius: 6px;
+  font: 19px/ 50px "Georgia";
+  color: #ffff;
+  text-align: center;
+  background-color: #0047a8;
+}
+
+.all_films:hover {
+  background: #0047a8;
+  cursor: pointer;
+}
+
+.video_about_me {
+  width: 100%;
+  height: 800px;
+  padding-bottom: 100px;
+}
+
+#button_on_top {
+  display: inline-block;
+  background-color: #0047a8;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  opacity: 0.3;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button_on_top::after {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button_on_top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button_on_top:active {
+  background-color: #555;
+}
+#button_on_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#button_on_top i {
+  padding-top: 17px;
+}
+
+.a_vk {
+  color: #333333;
+  text-decoration: none;
+  padding: 0 20px;
+  cursor: pointer;
+  font: 28px/ 50px "Georgia";
+}
+
+.a_mail {
+  text-align: center;
+  color: #333333;
+  padding: 0 10px;
+  cursor: pointer;
+  font: 28px/ 50px "Georgia";
+}
+
+.a_phone {
+  text-align: center;
+  color: #333333;
+  padding: 0 20px;
+  cursor: pointer;
+  font: 24px/ 50px "Georgia";
+}
