@@ -1,4 +1,4 @@
-import { IScore } from "./IScore";
+import { IScore } from "../IScore";
 
 export interface IScoreDatabase {
   getScores(callback: (scores: IScore[]) => void): void;

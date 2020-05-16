@@ -8,23 +8,29 @@ class ScoresRepository {
 
   factory ScoresRepository.instance() => _instance ??= ScoresRepository._();
 
+  // static const String _host = 'http://localhost:4242';
+  static const String _host =
+      'http://ec2-18-185-71-205.eu-central-1.compute.amazonaws.com:4242';
+
   static ScoresRepository _instance;
 
   Future<Iterable<Score>> get scores async => _fetchScores();
 
   Future<void> add(Score score) async {
     await http.put(
-        'http://ec2-18-185-71-205.eu-central-1.compute.amazonaws.com:4242/score',
-        headers: <String, String>{'Content-Type': 'application/json'},
-        body: json.encode(<String, dynamic>{
+      '$_host/score',
+      headers: <String, String>{'Content-Type': 'application/json'},
+      body: json.encode(
+        <String, dynamic>{
           'timestamp': score.timestamp,
           'value': score.value,
-        }));
+        },
+      ),
+    );
   }
 
   Future<Iterable<Score>> _fetchScores() async {
-    final http.Response response = await http.get(
-        'http://ec2-18-185-71-205.eu-central-1.compute.amazonaws.com:4242/scores');
+    final http.Response response = await http.get('$_host/scores');
     return response.statusCode == 200
         ? _deserializeScores(response.body)
         : <Score>[];

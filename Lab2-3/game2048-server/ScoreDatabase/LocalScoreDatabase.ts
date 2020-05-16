@@ -1,6 +1,6 @@
 import * as sqlite3 from "sqlite3";
 import { IScoreDatabase } from "./IScoreDatabase";
-import { IScore } from "./IScore";
+import { IScore } from "../IScore";
 
 export class LocalScoreDatabase implements IScoreDatabase {
   private static _instance: LocalScoreDatabase;
@@ -34,7 +34,7 @@ export class LocalScoreDatabase implements IScoreDatabase {
     );
   }
 
-  public addScore(value: number, timestamp: number) {
+  public addScore(value: number, timestamp: number): void {
     this._db.run(
       `INSERT INTO score (timestamp, value) VALUES(${timestamp}, ${value})`
     );

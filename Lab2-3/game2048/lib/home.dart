@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:game2048/metrics_repository.dart';
 import 'game.dart';
 import 'high_scores_table.dart';
 import 'overlay_message.dart';
@@ -44,6 +45,7 @@ class _HomePageState extends State<HomePage> {
   @override
   void initState() {
     _initGame();
+    MetricsRepository.instance().addVisit();
     super.initState();
   }
 
@@ -58,6 +60,25 @@ class _HomePageState extends State<HomePage> {
     final Size availableSize = MediaQuery.of(context).size;
 
     final PreferredSizeWidget appBar = AppBar(
+      leading: Padding(
+        padding: const EdgeInsets.only(left: 8),
+        child: Tooltip(
+          message: 'Visit count',
+          child: Row(
+            children: <Widget>[
+              const Icon(Icons.visibility),
+              const SizedBox(
+                width: 8,
+              ),
+              FutureBuilder<int>(
+                future: MetricsRepository.instance().visitCount,
+                builder: (BuildContext context, AsyncSnapshot<int> snapshot) =>
+                    Text(snapshot.hasData ? '${snapshot.data}' : '0'),
+              ),
+            ],
+          ),
+        ),
+      ),
       centerTitle: true,
       title: const Text(
         '2048',

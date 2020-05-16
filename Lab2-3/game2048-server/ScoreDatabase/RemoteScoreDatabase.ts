@@ -1,6 +1,6 @@
 import * as mysql from "mysql";
 import { IScoreDatabase } from "./IScoreDatabase";
-import { IScore } from "./IScore";
+import { IScore } from "../IScore";
 
 export class RemoteScoreDatabase implements IScoreDatabase {
   private static _instance: RemoteScoreDatabase;
